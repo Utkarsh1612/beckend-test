@@ -54,7 +54,7 @@ app.get("/users/:id", (req, res) => {
   if (user) {
     res.json({ user });
   } else {
-    res.status(404).json({ message: "User not found." });
+    res.status(404).json({ message: "User not found." }); 
   }
 });
 
@@ -63,3 +63,4 @@ const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
