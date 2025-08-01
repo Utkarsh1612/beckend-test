@@ -58,7 +58,8 @@ app.get("/users/:id", (req, res) => {
   }
 });
 
-const PORT = 3000;
+require("dotenv").config();
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
